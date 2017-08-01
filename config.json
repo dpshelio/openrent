@@ -1,0 +1,14 @@
+{
+	  "work_addr1": "NW1 0XX",
+	  "work_addr2": "SE1 0XX",
+    "radius": 10,
+    "max_value": 1800,
+    "min_value": 500,
+    "avail_from": "2020-01-15", // "YYYY-mm-dd"
+    "delta_days": 100,
+	  "slack_token": "xoxp-number-number-xxxxxx",
+    "trello_key": "longnumber",
+    "trello_token": "longhash",
+    "trello_board": "anotherHash",
+    "sr_searchid1": "key"
+}

@@ -1,4 +1,4 @@
-# Openrent slack notifier
+# Openrent/SpareRoomUK slack and trello notifier
 
 This program parses property listings on openrent.co.uk and if a listing is new
 and is suitable then it will issue a slack notification.
@@ -81,6 +81,9 @@ Create `config.json` as per example:
 }
 ```
 
+Read [Trolly info](https://github.com/plish/Trolly) to find out the id of your
+trello board where you want to add the information.
+
 modify `should_notify` in `./get_properties.py` as appropriate.
 
 Also you probably want to modify `query_string` too:
@@ -109,3 +112,6 @@ and the notification includes a link to TFL directions to the `work_addr2`.
 logic for the notifications. Deleting a property from there will make
 `./get_properties.py` script think that it's a new property but getting the
 body of that property from openrent and parsing will be skipped.
+
+Slack API tokens: https://api.slack.com/custom-integrations/legacy-token
+Trello tokens:  https://trello.com/app-key
